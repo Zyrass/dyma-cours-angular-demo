@@ -11,12 +11,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { Chapitre1Component } from './cours/chapitre1/chapitre1.component';
 import { Chapitre2Component } from './cours/chapitre2/chapitre2.component';
+import { Chapitre3Component } from './cours/chapitre3/chapitre3.component';
 
 // My array ROUTE
 const APP_ROUTE: Route[] = [
   { path: '', component: HomeComponent },
   { path: 'chapitre/1', component: Chapitre1Component },
-  { path: 'chapitre/2', component: Chapitre2Component }
+  { path: 'chapitre/2', component: Chapitre2Component },
+  { path: 'chapitre/3', component: Chapitre3Component },
 ];
 
 
@@ -27,7 +29,8 @@ const APP_ROUTE: Route[] = [
     FooterComponent,
     HomeComponent,
     Chapitre1Component,
-    Chapitre2Component
+    Chapitre2Component,
+    Chapitre3Component
   ],
   imports: [
     BrowserModule,
