@@ -1,0 +1,326 @@
+<header>
+    <div class="container-fluid text-center py-5 bg-danger" id="particles-js">
+        <img width="200" alt="Angular Logo"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
+
+        <h1 class="text-center display-4"><span class="text-warning">{{ title }}</span></h1>
+        <hr />
+        <p class="lead text-white">Découverte du framework ANGULAR grâce à la plateforme de Dyma.FR</p>
+    </div>
+</header>
+
+<div class="container mt-5">
+
+    <nav>
+        <div class="nav nav-tabs">
+            <a class="nav-item nav-link active" data-toggle="tab" href="#first-intall">1ère intallation</a>
+            <a class="nav-item nav-link" data-toggle="tab" href="#explication-main-ts">Explication de main.ts</a>
+            <a class="nav-item nav-link" data-toggle="tab" href="#cli">CLI avec et sans</a>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <!-- FIRST_INSTALL -->
+        <div class="tab-pane fade show active" id="first-intall">
+            <h2 class="text-center mt-5">1ère Installation</h2>
+
+            <!-- Étape 1 -->
+            <div class="row">
+                <article class="my-3">
+                    <h2 class="h3">Première étape - <small>Installer la CLI d'Angular</small></h2>
+                    <p>Une fois NodeJS installé, nous pouvons utiliser la commande <mark>npm</mark> afin de créer notre
+                        application
+                        angular.<br />Pour celà, nous allons utiliser dans notre terminal, cette ligne de commande :</p>
+                    <div class="terminal w-100">
+                        <pre>npm install -g @angular/cli</pre>
+                    </div>
+                    <div class="alert alert-info p5 my-3">
+                        <strong>Important :</strong> -g <em>permet une installation globale d'Angular</em></div>
+                </article>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="row">
+                <article class="my-3">
+                    <h2 class="h3">Deuxième étape - <small>Installer une app Angular</small></h2>
+                    <p>Une fois le CLI d'ANGULAR installé, nous pouvons créer notre application angular part le biais
+                        d'une
+                        nouvelle
+                        commande à exécuter dans notre terminal :</p>
+                    <div class="terminal w-100">
+                        <pre>ng new myApp</pre>
+                    </div>
+                    <div class="alert alert-info p5 my-3">
+                        <strong>Important :</strong> myApp <em>correspond au nom de mon application</em>
+                    </div>
+                    <div class="alert alert-warning p5 my-3">
+                        <strong>Deux étapes supplémentaire vous serons demandé :</strong>
+                        <ol type="1">
+                            <li>La première, c'est de savoir si l'on souhaite utilisé <strong>le routing</strong></li>
+                            <li>La seconde c'est de savoir si l'on souhaite utiliser <strong>le CSS / SCSS ou rien du
+                                    tout</strong></li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="row">
+                <article class="my-3">
+                    <h2 class="h3">Troisième étape - <small>Se rendre dans notre app...</small></h2>
+                    <p>Une fois le CLI d'ANGULAR installé, nous devons créer notre application angular via le biais
+                        d'une
+                        commande à
+                        exécuter dans notre terminal.</p>
+                    <div class="terminal w-100">
+                        <pre>cd myApp</pre>
+                    </div>
+                    <div class="alert alert-info p5 my-3">
+                        <strong>Important :</strong> cd <em>veut simplement dire qu'on change de répertoire.</em>Ici
+                        nous aurons
+                        myApp/
+                        comme dossier principal de notre application.
+                    </div>
+                </article>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="row">
+                <article class="my-3">
+                    <h2 class="h3">Quatrième étape - <small>Simuler un serveur locale...</small></h2>
+                    <p>Une fois nos 3 étapes terminer, il nous reste plus qu'à voir le contenu des fichiers en lançant
+                        un
+                        serveur
+                        locale qui compilera et interprêtera intégralement notre application.</p>
+                    <div class="terminal w-100">
+                        <pre>ng serve</pre>
+                    </div>
+                    <div class="alert alert-info p5 my-3">
+                        <strong>Important :</strong> Obligatoirement, le serveur sera démarrer sur :
+                        <strong>http://localhost:4200</strong>
+                    </div>
+                    <p class="lead">Si l'on souhaite utiliser un autre serveur locale, nous ajouterons le paramètre
+                        <strong>--port</strong> suivie d'un numéro de port accessible.<br />Exemple :</p>
+                    <div class="terminal w-100">
+                        <pre>ng serve --port 5555</pre>
+                    </div>
+                    <div class="alert alert-info p5 my-3">
+                        Ainsi, le serveur locale sera accessible à cette adresse :
+                        <strong>http://localhost:5555</strong>
+                    </div>
+                </article>
+            </div>
+        </div><!-- /FIRST_INSTALL -->
+
+        <div class="tab-pane fade" id="explication-main-ts">
+
+            <div class="row">
+
+                <h2 class="text-center mt-5">La logique du fichier main.ts</h2>
+                <p class="lead text-center my-5">
+                    Ci-dessous j'affiche via plusieurs onglets, le contenu des commentaires que j'ai indiqué afin de
+                    comprendre ce que je
+                    fais.
+                </p>
+
+                <div class="col-3">
+
+                    <div class="nav flex-column nav-pills">
+                        <a class="nav-link active" data-toggle="pill" href="#v-pills-index">index.html</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-style">styles.css</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-main">main.ts</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-app-module">app.module.ts</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-app-component-ts">app.component.ts</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-app-component-html">app.component.html</a>
+                        <a class="nav-link" data-toggle="pill" href="#v-pills-app-component-css">app.component.css</a>
+                    </div><!-- /nav-pills -->
+
+                </div><!-- /col-3 -->
+
+                <div class="col-9">
+
+                    <div class="tab-content">
+
+                        <!-- CONTENT_INDEX_HTML -->
+                        <div class="tab-pane fade show active" id="v-pills-index">
+                            <h3>index.html</h3>
+                            <p>Dans mon fichier index.html, j'ajouterai uniquement :</p>
+                            <table class="table table-hover table-striped text-center">
+                                <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nom</th>
+                                        <th>description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CSS de Bootstrap</td>
+                                        <td>Framework CSS très connu. (Facilite le développement des applications)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Scripts JS de Bootstrap</td>
+                                        <td>Permet d'interrargir avec les différents composants dynamiquement.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Font Google</td>
+                                        <td>Selon le besoin nous pourrons ajouter ici des fonts Google afin de
+                                            changer le
+                                            style d'écriture</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Font-Awesome</td>
+                                        <td>Permet d'ajouter un très grand nombre d'icônes très facilement.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="alert alert-danger"><strong>Avec le composant app-root qui n'est a ne
+                                    surtout pas
+                                    oublier</strong>
+                            </div>
+
+                            <pre>
+        &lt;!--
+        |----------------------------------------------------------------------------------
+        | Le tag ci-dessous est en aucun cas un tag natif dans le langage HTML.
+        | Donc pour qu'il soit interprêté, par le navigateur, il faut que nous
+        | regardions le fichier main.ts
+        |----------------------------------------------------------------------------------
+        -->
+                            </pre>
+
+                        </div><!-- /CONTENT_INDEX_HTML -->
+
+                        <!-- CONTENT_STYLES_CSS -->
+                        <div class="tab-pane fade" id="v-pills-style">
+                            <h3>styles.css</h3>
+                            <p class="lead">On ne peut pas faire plus simple. Ici se trouve le code CSS qui sera
+                                impacter
+                                sur toute notre application</p>
+                        </div><!-- /CONTENT_STYLES_CSS -->
+
+                        <!-- CONTENT_MAIN_TS -->
+                        <div class="tab-pane fade" id="v-pills-main">
+                            <h3>main.ts</h3>
+                            <pre>
+        /*
+        |----------------------------------------------------------------------------------
+        | MAIN.TS
+        |----------------------------------------------------------------------------------
+        | Main.ts va nous permettre de faire en sorte que nos navigateurs puissent
+        | interprêter nos "tags" qu'on aura créer de toute pièce grâce à nos composants.
+        | Aussi appelé (component).
+        |
+        | Le fichier main.ts est donc une brique indispensable au bon fonctionnement 
+        | de notre application.
+        |----------------------------------------------------------------------------------
+        */
+                            </pre>
+                            <pre>
+        /*
+        |----------------------------------------------------------------------------------
+        | AppModule correspond à la classe qui est elle exportée du fichier 
+        |----------------------------------------------------------------------------------
+        */
+                            </pre>
+                            <pre>
+        /*
+        |----------------------------------------------------------------------------------
+        | plateformBrowserDynamic().bootstrapModule(AppModule)
+        | permet de lancer l'application et donc nous passons la classe AppModule
+        |----------------------------------------------------------------------------------
+        */
+                            </pre>
+
+                        </div><!-- /CONTENT_MAIN_TS -->
+
+                        <!-- CONTENT_APP_MODULE_TS -->
+                        <div class="tab-pane fade" id="v-pills-app-module">
+                            <h3>app.module.ts</h3>
+                            <pre>
+        /*
+        |--------------------------------------------------------------------------------
+        | APP.MODULE.TS
+        |--------------------------------------------------------------------------------
+        | Le fichier app.module.ts permet de lié le fichier app.component.ts
+        | Une fois lié, nous exportons à la fin la classe dans le fichier main.ts
+        |--------------------------------------------------------------------------------
+        */
+                            </pre>
+
+                            <pre>
+        /*
+        |--------------------------------------------------------------------------------
+        | Ici j'importe la classe AppComponent du fichier app/app.component.ts
+        |--------------------------------------------------------------------------------
+        */
+                            </pre>
+
+                            <pre>
+        /*
+        |--------------------------------------------------------------------------------
+        | Déclaration d'un décorateur. Ici : @NgModule
+        |--------------------------------------------------------------------------------
+        */
+                            </pre>
+
+                            <pre>
+        /*
+        |--------------------------------------------------------------------------------
+        | Ici nous exportons AppModule qui sera lui utilisé dans le fichier main.ts
+        |--------------------------------------------------------------------------------
+        */
+                            </pre>
+
+                        </div><!-- /CONTENT_APP_MODULE_TS -->
+
+                        <!-- CONTENT_APP_COMPONENT_TS -->
+                        <div class="tab-pane fade" id="v-pills-app-component-ts">
+                            <h3>app.component.ts</h3>
+                            <p class="lead">Ici, nous définissons le selecteur qui pour mon application, elle correspond
+                                à
+                                app-root. Nous définissons ici le HTML directement ou via un fichier externe (dans notre
+                                cas
+                                dans un fichier externe). Mais il est aussi possible de mettre du code CSS ici.
+                                (Également
+                                pour nous c'est dans un autre fichier). Et pour finir jous exportons notre class qui est
+                                utilisé dans notre fichier app.module.ts</p>
+                        </div><!-- /CONTENT_APP_COMPONENT_TS -->
+
+                        <!-- CONTENT_APP_COMPONENT_HTML -->
+                        <div class="tab-pane fade" id="v-pills-app-component-html">
+                            <h3>app.component.html</h3>
+                            <p class="lead">Ici nous auront le code HTML ainsi que les interpolations et le reste du
+                                contenu
+                                spécifique lié à notre application. A savoir que ce fichier représente le code que sera
+                                interprêté et qui sera affiché à l'écran.</p>
+                        </div><!-- /CONTENT_APP_COMPONENT_HTML -->
+
+                        <!-- CONTENT_APP_COMPONENT_CSS -->
+                        <div class="tab-pane fade" id="v-pills-app-component-css">
+                            <h3>app.component.css</h3>
+                            <p class="lead">C'est très simple, ici et uniquement ici, le code sera interprêté uniquement
+                                pour le composant app</p>
+                        </div><!-- /CONTENT_APP_COMPONENT_CSS -->
+
+                    </div><!-- /tab-content -->
+
+                </div><!-- /col-9 -->
+
+            </div><!-- /row -->
+
+        </div><!-- /tab-pane -->
+
+        <div class="tab-pane fade" id="cli">
+            <p class="lead my-5">A rééditer..</p>
+        </div>
+    </div>
+
+</div>

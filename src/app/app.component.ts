@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Learning-Angular-dyma';
+
+    public title: string = "Alain Guillon"
+
 }
