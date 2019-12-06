@@ -18,7 +18,7 @@ const APP_ROUTE: Route[] = [
   { path: '', component: HomeComponent },
   { path: 'chapitre/1', component: Chapitre1Component },
   { path: 'chapitre/2', component: Chapitre2Component },
-  { path: 'chapitre/3', component: Chapitre3Component },
+  { path: 'projet/chapitre/3', component: Chapitre3Component },
 ];
 
 

@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
   
   // le titre de la page
   public title: string = "Alain Guillon";
+  public introduction: string = "J'apprends le framework ANGULAR grâce à la plateforme : Dyma.fr";
 
   constructor() { }
 

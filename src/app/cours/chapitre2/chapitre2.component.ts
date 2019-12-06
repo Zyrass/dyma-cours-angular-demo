@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Chapitre2Component implements OnInit {
 
+  // le titre de la page
+  public title: string = "Chapitre 2";
+  public introduction: string = "J'ai compris ce que c'est un composant, les templates et je pense avoir compris le fonctionnement du Data binding";
+  
+
   constructor() { }
 
   ngOnInit() {
